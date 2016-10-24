@@ -11,11 +11,15 @@ Date:24 oct,2016
 
 int main()
 { 
-	int a;
-	printf("Enter any number(a)\n");
+	int a,b,c;
+	printf("Enter first number\n");
 	scanf("%d",&a);
+	printf("Enter second number\n");
+	scanf("%d",&b);
+	printf("Enter third number\n");
+	scanf("%d",&c);
 	
+	(a>=b && a>=c) ? printf("a is largest\n") : (b>=c && b>=a) ? printf("b is largest\n") : printf("c is largest\n");
 	
-	(a%2==0) ? printf("%d is even",a) : printf("%d is odd",a);
 return 0;
 }
