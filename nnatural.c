@@ -4,22 +4,24 @@ Subject:Programming Fundamentals
 Program:
 Lab no:08
 Date:25 oct,2016
-*/
+*/ 
+
 #include<stdio.h>
 //#include<conio.h>
  int main(){
- int a,b,sum=0;
- printf("Enter a number:  ");
- scanf("%d",&a);
- b=a;
+ int i=0,sum=0,n;
+ printf("Enter n number:  ");
+ scanf("%d",&n);
+ 
  do
  {
-	 sum+=b;	
-	  b--;
- 
+	 sum+=i;	
+	 printf("sum of %d nos is : %d\n",i,sum);
+	 
+ i++;
  }
- while(b>0);
- printf("the sum of %d natural numbers=%d",a,sum);
+ while(i<=n);
+ 
 
  return 0;
 }
